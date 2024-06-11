@@ -1,0 +1,13 @@
+langchain==0.2.1
+langchain-experimental
+langchain-community==0.2.1
+langchain-postgres==0.0.6
+langfuse==2.33.1
+pgvector==0.2.5
+psycopg-binary==3.1.19
+python-dotenv==1.0.1
+sentence_transformers==3.0.0
+transformers==4.41.2
+pypdf==4.2.0
+semantic-chunkers
+semantic_router
