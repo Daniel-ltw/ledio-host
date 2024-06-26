@@ -1,0 +1,8 @@
+*.egg-info
+build/*
+__pycache__
+tags
+.plexis
+.aider*
+.env
+pgdata
