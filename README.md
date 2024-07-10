@@ -27,4 +27,11 @@ I have tried to run more complex/large model on my M1 chipset machine, but my ma
 
 With the above problem, will need to work with the smallest models, but will also need to ensure that we prevent the model from hallucinating.
 
-###
+### Running it locally
+Start by running `./build-docker` and copy a copy of the `sample.env` file to `.env`.
+You would first need to start the database and initialize it.
+`docker compose up db -d`
+This is start the database in the background.
+Then you will need to run `./init-db.sh` to initialize the database with langfuse related details.
+
+Once the above is done, you should be able to run `./start-docker` to start everything up and play with the host by running `python main.py`.
