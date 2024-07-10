@@ -29,7 +29,7 @@ def host():
         session_id=session_id,
     )
     index = 0
-    model = Ollama(base_url="http://192.168.172.64:11434", callbacks=[handler], model="wangshenzhi/llama3-8b-chinese-chat-ollama-q8")
+    model = Ollama(base_url=os.environ.get('OLLAMA_ENDPOINT'), callbacks=[handler], model="wangshenzhi/llama3-8b-chinese-chat-ollama-q8")
     # model = ChatGroq(callbacks=[handler], model="llama3-70b-8192")
     pg_vector_store = store.vector_store()
     record_manager = store.record_manager
